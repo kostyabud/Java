@@ -1,5 +1,8 @@
 package com.JavaFuddamentals.MainTask;
 
+import com.sun.source.doctree.ThrowsTree;
+
+import java.text.NumberFormat;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,6 +28,26 @@ public class Main {
             arr[i] = random.nextInt(10000) -1000;
             System.out.println(arr[i]);
         }
+
+        System.out.print("Введите число от 1 до 12: ");
+        int month = in.nextInt();
+        switch (month) {
+            case 1 -> System.out.println("1 this is January");
+            case 2 -> System.out.println("2 this is February");
+            case 3 -> System.out.println("3 this is March");
+            case 4 -> System.out.println("4 this is April");
+            case 5 -> System.out.println("5  this is May");
+            case 6 -> System.out.println("6 this is June");
+            case 7 -> System.out.println("7 this is July");
+            case 8 -> System.out.println("8 this is August");
+            case 9 -> System.out.println("9 this is September");
+            case 10 -> System.out.println("10 this is October");
+            case 11 -> System.out.println("11 this is November");
+            case 12 -> System.out.println("12 this is December");
+            default -> throw new RuntimeException("You need enter from 1 to 12");        }
+
+
+
 
 
     }
