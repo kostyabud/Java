@@ -9,14 +9,29 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args){
         for (int i = args.length -1; i>=0; i--) {  //Аргументы командной строки в обрятном порядке
-            System.out.println(args[i]);
+            System.out.print(args[i]);
         }
-        Scanner in = new Scanner (System.in); //Приветствие пользователя при вводе через консоль
+        System.out.println("\n");
+
+        // Вывод аргументов командной строки  в консоль их сумма и произведение
+        int amount = 0;
+        int prod = 1;
+        for (int i = 0; i < args.length; i  ++) {
+            System.out.println(args[i]);
+            int newargs = Integer.parseInt(args[i]);
+            amount += newargs;
+            prod *= newargs;
+        }
+        System.out.println("Amount = " + amount + "\n" + "Product = " + prod);
+
+        //Приветствие пользователя при вводе через консоль
+        Scanner in = new Scanner (System.in);
         System.out.print("Enter you name: ");
         String name = in.next();
         System.out.println("Hello, " + name);
 
-        System.out.print("какое количество чисел вывести?: "); //Вывод заданного количества чисел
+        //Вывод заданного количества чисел
+        System.out.print("какое количество чисел вывести?: ");
         int num = in.nextInt();
         int[] arr = new int [num];
         Random random = new Random();
@@ -29,6 +44,7 @@ public class Main {
             System.out.println(arr[i]);
         }
 
+        //Выводит на консоль месяц соответствующий введенному числу
         System.out.print("Введите число от 1 до 12: ");
         int month = in.nextInt();
         switch (month) {
@@ -44,11 +60,7 @@ public class Main {
             case 10 -> System.out.println("10 this is October");
             case 11 -> System.out.println("11 this is November");
             case 12 -> System.out.println("12 this is December");
-            default -> throw new RuntimeException("You need enter from 1 to 12");        }
-
-
-
-
-
+            default -> throw new RuntimeException("You need enter from 1 to 12");
+        }
     }
 }
