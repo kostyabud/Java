@@ -31,6 +31,22 @@ public class Main {
         System.out.println("Минимальное число: " + minStr + " состоит из: " + min + " цифр");
         System.out.println("Максимальное число: " + maxStr + " состоит из: " + max + " цифр");
 
+        // Вывод чисел ф порядке убывания их длины
+        for (int i = array.length -1; i > 0  ; i--) {
+            for (int j = 0; j < i; j++) {
+                if (array[j].length() < array[j+1].length()){
+                    String temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
 
+                }
+                
+            }
+
+        }
+        System.out.println("Вывод в порядке убывания длинны чисел");
+        for (int i = 0; i < array.length ; i++) {
+            System.out.println(array[i]);
+        }
     }
 }
