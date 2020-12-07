@@ -45,8 +45,25 @@ public class Main {
 
         }
         System.out.println("Вывод в порядке убывания длинны чисел");
-        for (int i = 0; i < array.length ; i++) {
-            System.out.println(array[i]);
+        for (String s : array) {
+            System.out.println(s);
         }
+        // Числа меньше средней длины
+        double average = 0;
+        int sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i].length();
+
+        }
+        average = sum / count;
+        System.out.println("Средняя длина = "+ average);
+        for (int i = 0; i < array.length; i++) {
+            if(array[i].length() < average) {
+                System.out.println(array[i] + " - длина = " + array[i].length());
+            }
+
+        }
+
     }
 }
