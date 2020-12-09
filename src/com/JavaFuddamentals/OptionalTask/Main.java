@@ -58,9 +58,9 @@ public class Main {
         }
         average = sum / count;
         System.out.println("Средняя длина = "+ average);
-        for (int i = 0; i < array.length; i++) {
-            if(array[i].length() < average) {
-                System.out.println(array[i] + " - длина = " + array[i].length());
+        for (String s : array) {
+            if (s.length() < average) {
+                System.out.println(s + " - длина = " + s.length());
             }
 
         }
