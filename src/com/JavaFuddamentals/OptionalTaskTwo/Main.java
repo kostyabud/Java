@@ -41,7 +41,7 @@ public class Main {
                 }
             }
             showMatrix(matrix);
-            
+
             // Упорядочить строки  матрицы в порядке возрастания значений элементов k-го столбца
             System.out.print("Выбирайте столбец: ");
             int column = in.nextInt();
