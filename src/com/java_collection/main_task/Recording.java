@@ -7,6 +7,7 @@ import com.java_collection.main_task.style.Rock;
 import com.java_collection.main_task.style.StyleOfSong;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Recording {
     public static void main (String [] args) {
@@ -28,8 +29,8 @@ public class Recording {
         }
         System.out.println("\n" + "Суммарная длина треков на диске = " + diskDuration);
 
-        disk.sort(new SongStyleComparator());
-        for (int i = 0; i < 5; i++) {
+      disk.sort(new SongStyleComparator());
+      for (int i = 0; i < 6; i++) {
             System.out.println(disk.get(i));
         }
 

@@ -2,15 +2,13 @@ package com.java_collection.main_task;
 
 import com.java_collection.main_task.style.StyleOfSong;
 
-public class Song  {
+public class Song {
     private String nameOfSound;
     private String nameOfAuthor;
     private double duration;
     private StyleOfSong style;
 
-    public StyleOfSong getStyle() {
-        return style;
-    }
+
 
    public Song(String nameOfSound, String nameOfAuthor, double duration, StyleOfSong style){
         this.nameOfSound  = nameOfSound;
@@ -19,6 +17,11 @@ public class Song  {
         this.style = style;
 
     }
+
+    public StyleOfSong getStyle() {
+        return style;
+    }
+
     public double getDuration(){
         return duration;
     }
@@ -31,5 +34,8 @@ public class Song  {
                 " Style: " + style;
     }
 
-//
+
+
+
+
 }
