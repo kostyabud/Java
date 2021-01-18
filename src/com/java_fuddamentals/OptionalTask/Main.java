@@ -1,4 +1,4 @@
-package com.JavaFuddamentals.OptionalTask;
+package com.java_fuddamentals.OptionalTask;
 
 import java.util.Scanner;
 

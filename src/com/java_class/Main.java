@@ -1,8 +1,8 @@
-package com.JavaClass;
+package com.java_class;
 
 
-import static com.JavaClass.Sort.showRangeNumberOfMedicalCard;
-import static com.JavaClass.Sort.showWitchGastritis;
+import static com.java_class.Sort.showRangeNumberOfMedicalCard;
+import static com.java_class.Sort.showWitchGastritis;
 
 public class Main {
 

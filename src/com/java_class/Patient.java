@@ -1,6 +1,4 @@
-package com.JavaClass;
-
-import java.util.Objects;
+package com.java_class;
 
 public class Patient {
     private int id;

@@ -1,4 +1,4 @@
-package com.JavaClass;
+package com.java_class;
 
 class Sort extends Patient {
 

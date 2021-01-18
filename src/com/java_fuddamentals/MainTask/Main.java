@@ -1,13 +1,10 @@
-package com.JavaFuddamentals.MainTask;
+package com.java_fuddamentals.MainTask;
 
-import com.sun.source.doctree.ThrowsTree;
-
-import java.text.NumberFormat;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    public static void main (String[] args){
+    public static void main(String[] args){
         for (int i = args.length -1; i>=0; i--) {  //Аргументы командной строки в обрятном порядке
             System.out.print(args[i]);
         }
