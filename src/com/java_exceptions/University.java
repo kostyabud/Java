@@ -1,20 +1,36 @@
 package com.java_exceptions;
 
 
-import java.util.Arrays;
+
 import java.util.List;
 
 public class University {
-    public static int averageScoreStudent(Student student){
-        return (student.getBasedOnLogical() + student.getBasedOnPhilosophy()) / 2;
+    private static List<Student> students;
 
+    public static int getAverageScoreStudent(Student student){
+        return (student.getBasedOnLogical() + student.getBasedOnPhilosophy()) / 2;
     }
 
-//    public  static int averageScoreOnSubject(List<List<Group>> faculty){
-//        List<List<Group>> faculties = Arrays.asList();
-//        Student student;
-//        faculties.stream().filter(groups -> faculties.equals(List<Group>))
-//        return 0;
-//    }
+    public static double getAverageScoreSubjectLogicalOnFacultyInGroup(List<List<Group>> subject){
+        double averageScore = 0;
+        for (List<Group> elem: subject) {
+           averageScore += elem.get(0).getBasedOnLogical() + elem.get(1).getBasedOnLogical();
+
+        }
+        return averageScore /= 4;
+    }
+
+    public static double getAverageScoreOnPhilosophyInUniversity(List<List<Group>> faculty, List<List<Group>> facultyTwo){
+        double averageScoreFaculty = 0;
+        for (List<Group> elem: faculty) {
+            averageScoreFaculty += elem.get(0).getBasedOnPhilosophy() + elem.get(1).getBasedOnPhilosophy();
+        }
+
+        double averageScoreFacultyTwo = 0;
+        for (List<Group> elem: facultyTwo) {
+            averageScoreFacultyTwo += elem.get(0).getBasedOnPhilosophy() + elem.get(1).getBasedOnPhilosophy();
+        }
+        return (averageScoreFaculty + averageScoreFacultyTwo) / 8;
+    }
 
 }

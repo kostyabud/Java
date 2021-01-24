@@ -1,17 +1,10 @@
 package com.java_exceptions;
 
-public class Group extends Facultity  {
+public class Group extends Facultity {
     String nameGroup;
 
-    public Group(String nameFacult, String nameGroup) {
-        super(nameFacult);
+    public Group(String nameFaculty, int basedOnPhilosophy, int basedOnLogical, String nameGroup) {
+        super(nameFaculty, basedOnPhilosophy, basedOnLogical);
         this.nameGroup = nameGroup;
-    }
-
-    @Override
-    public String toString() {
-        return super. toString() + "Group{" +
-                "nameGroup='" + nameGroup + '\'' +
-                '}';
     }
 }
