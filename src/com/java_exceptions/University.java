@@ -5,10 +5,9 @@ package com.java_exceptions;
 import java.util.List;
 
 public class University {
-    private static List<Student> students;
 
-    public static int getAverageScoreStudent(Student student){
-        return (student.getBasedOnLogical() + student.getBasedOnPhilosophy()) / 2;
+    public static double getAverageScoreStudent(Student student){
+        return (double)(student.getBasedOnLogical() + student.getBasedOnPhilosophy()) / 2;
     }
 
     public static double getAverageScoreSubjectLogicalOnFacultyInGroup(List<List<Group>> subject){

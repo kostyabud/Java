@@ -6,7 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Student student = new Student("chemical", 3, 5, "Fa11", "kostya");
         Student student2 = new Student("chemical", 7, 1, "Fa11", "Natasha");
         Student student3 = new Student("Biological", 7, 8, "TA22", "Anastasia");
@@ -23,11 +22,12 @@ public class Main {
         List<Group> ta11 = Arrays.asList(student6, student8);
         List<List<Group>> biologicalFaculty = Arrays.asList(ta11,ta22);
 
-        System.out.println("Средний балл по Философии для всего университета" +
+        System.out.println("Средний бал студета по предметам - " +
+                University.getAverageScoreStudent(student2));
+        System.out.println("Средний балл по Философии для всего университета - " +
                 University.getAverageScoreOnPhilosophyInUniversity(chemicalFaculty,biologicalFaculty));
-        System.out.println("Cредний балл по Логике в группе Fa11 на химическом факультете" +
+        System.out.println("Средний балл по Логике в группе Fa11 на химическом факультете - " +
                 University.getAverageScoreSubjectLogicalOnFacultyInGroup(chemicalFaculty));
-
 
     }
 
