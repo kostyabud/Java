@@ -13,7 +13,7 @@ public class Main {
         // Вывод аргументов командной строки  в консоль их сумма и произведение
         int amount = 0;
         int prod = 1;
-        for (int i = 0; i < args.length; i  ++) {
+        for (int i = 0; i < args.length; i++) {
             System.out.println(args[i]);
             int newargs = Integer.parseInt(args[i]);
             amount += newargs;
