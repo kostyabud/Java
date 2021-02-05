@@ -1,8 +1,9 @@
 |-data
-|--- name.txt
-|--- Narkov
-|--- -- eretwttwetwetwetwe323.txt
-|--- -- ghhhhh@.txt
-|--- -- Morozov.docx
-|--- testing
-|--- -- Test.txt
+|-  name.txt
+|-  Narkov
+|-    Morozov.txt
+|-    ProverkadZ.txt
+|-    stop.txt
+|-  testing
+|-    music.txt
+|-    Test.txt
