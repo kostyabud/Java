@@ -22,7 +22,7 @@ public class Plane implements Runnable{
         return planeID;
     }
     @Override
-    public synchronized void run(){
+    public  void run(){
 
         try {
             if(!isTookOf) {
