@@ -12,8 +12,10 @@ public class OtherCar extends Car   {
     public void run(){
        try {
           TimeUnit.SECONDS.sleep(3);
-          System.out.println(getName() +  " ждет. Свободных парковычных мест нет");
+          System.out.println(getName() +  " ждет.");
           TimeUnit.SECONDS.sleep(3);
+           System.out.println(" Свободных парковычных мест нет");
+           TimeUnit.SECONDS.sleep(2);
            System.out.println("Нет времени ждать, машина " + getName() + " уехала на другую стоянку");
        } catch (InterruptedException e) {
            e.printStackTrace();
